@@ -97,7 +97,7 @@ header p {
   margin-top: 25px;
   margin-left: -15px;
 }
-a {
+.bnt-more {
   background: #3F51B5;
   color: #FFFFFF;
   padding: 8px 20px;
@@ -109,7 +109,7 @@ a {
   border-radius: 2px;
   box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
 }
-a:hover, a:active, a:focus {
+.bnt-more:hover, .bnt-more:active, .bnt-more:focus {
   background: #32408f;
   color: #FFFFFF;
   text-decoration: none;
