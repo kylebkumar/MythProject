@@ -9,6 +9,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+        p{
+            font-size:21px;
+            width:50%;
+        }
+        .map-holder{
+            display: flex;
+            margin: 10vh 10%;
+            align-items: center;
+        }
+        @media screen and (max-width:8in) {
+            iframe{
+                width:85%;
+            }
+            .map-holder{
+                margin:10vh auto;
+                width:85%;
+                flex-direction: column;
+            }
+            p{
+                width:85%;
+            }
+        }
+    </style>
 </head>
 <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -41,17 +65,17 @@
     </nav>
 </header>
 <body>
-<div style="display: flex; flex-direction: row; margin: 10vh 15%; align-items: center;">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d970252.5552223969!2d-67.1463181597737!3d18.20766990126341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c0296261b92a7f9%3A0xf336ec2818049b1a!2sPuerto%20Rico!5e0!3m2!1sen!2sus!4v1617037392555!5m2!1sen!2sus" width="600" height="450" style="border:0; margin:0 35px;" loading="lazy"></iframe>
-    <p>The first sightings of the chupacabra occurred in Puerto Rico in 1995.</p>
-</div>
-<div style="display: flex; flex-direction: row; margin: 10vh 15%; align-items: center;">
-    <p>Since then, reports have been made as far into North America as the forests of Maine.</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880528.1091272105!2d-71.22744038332252!3d45.16653130720959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb01dde1d538ad5%3A0xd679cc6f6720a8d0!2sMaine!5e0!3m2!1sen!2sus!4v1617037945134!5m2!1sen!2sus" width="600" height="450" style="border:0; margin:0 35px;" allowfullscreen="" loading="lazy"></iframe>
-</div>
-<div style="display: flex; flex-direction: row; margin: 10vh 15%; align-items: center;">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26626377.57404463!2d-106.21364171885381!3d-35.44760857283769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x505e1131102b91d!2sChile!5e0!3m2!1sen!2sus!4v1617038000954!5m2!1sen!2sus" width="600" height="450" style="border:0; margin:0 35px;" allowfullscreen="" loading="lazy"></iframe>
-    <p>And, sightings have been reported as far South as the tropics of Chile.</p>
-</div>
+    <div class="map-holder">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d970252.5552223969!2d-67.1463181597737!3d18.20766990126341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c0296261b92a7f9%3A0xf336ec2818049b1a!2sPuerto%20Rico!5e0!3m2!1sen!2sus!4v1617037392555!5m2!1sen!2sus" width="50%" height="450px" style="border:0; margin:0 35px;" loading="lazy"></iframe>
+        <p>The first sightings of the Chupacabra occurred in Puerto Rico in 1995. The corpses of livestock were discovered that were completely intact but lacked blood.</p>
+    </div>
+    <div class="map-holder">
+        <p>Since then, reports have been made as far into North America as the forests of Maine. In the North, the animal is characterized as a hairless, coyote-like creature, and lost the spines on its back.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880528.1091272105!2d-71.22744038332252!3d45.16653130720959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb01dde1d538ad5%3A0xd679cc6f6720a8d0!2sMaine!5e0!3m2!1sen!2sus!4v1617037945134!5m2!1sen!2sus" width="50%" height="450" style="border:0; margin:0 35px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="map-holder">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26626377.57404463!2d-106.21364171885381!3d-35.44760857283769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x505e1131102b91d!2sChile!5e0!3m2!1sen!2sus!4v1617038000954!5m2!1sen!2sus" width="50%" height="450" style="border:0; margin:0 35px;" allowfullscreen="" loading="lazy"></iframe>
+        <p>And, sightings have been reported as far South as the tropics of Chile. A group of dead animals was discovered in the region, devoid of blood and with marks on their bodies that could not have been created by an animal.</p>
+    </div>
 </body>
 </html>
